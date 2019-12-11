@@ -31,7 +31,7 @@ const getStock = (stockData, cb) => {
 
 		} else {
 			// Stock was found in DB. Return stock information
-			console.log('STOCK FOUND, SEND BACK INFO', doc, stockData);
+			// console.log('STOCK FOUND, SEND BACK INFO', doc, stockData);
 			cb(doc, 200)
 		}
 	});
