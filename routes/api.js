@@ -29,7 +29,7 @@ module.exports = function (app) {
 
   app.route('/api/stock-prices/')
     .get(function (req, res){
-      console.log(`req ${Object.getOwnPropertyNames(req.query)}, res ${res}`);
+      // console.log(`req ${Object.getOwnPropertyNames(req.query)}, res ${res}`);
       if (Object.getOwnPropertyNames(req.query) == "stock") {
       	controller.getStock(req, res);
       } else {
